@@ -1,7 +1,11 @@
-/* Convore Min-Width Userstyle */
-/* author: Adam Brault */
-/* http://andyet.net*/
-/* Would love to see @etmaguire add his own version of something like this to the site. :D */
+/* Convore Min-Width Userstyle                     */
+/*                                                 */
+/* author: Adam Brault | http://andyet.net         */
+/* author: Eric Zanol  | http://ericzanol.com      */
+/* license: MIT License                            */
+/*                                                 */
+/* We'd love to see @etmaguire add official CSS    */
+/* of something like this to the Convore site. :D  */
 
 
 @media screen and (max-width: 450px) {
@@ -161,8 +165,8 @@
 	
 	/**** hack to display star and reply icons on message hover ****/
 	.message .message-entry {
-		padding-right: 6px;
-		line-height: 1.5em;
+		padding-right: 6px !important;
+		line-height: 1.5em !important;
 	}
 
 	a.star-message.starred, .message:hover a.star-message, .message:hover a.reply-message {
@@ -171,32 +175,32 @@
 
 	li.message:hover .star a, li.message:hover .reply a, li.message .star a.starred {
 		width: 16px !important;
-		max-width: 16px;
+		max-width: 16px !important;
 	}
 
 	li.message:hover .star, li.message:hover .reply {
-		display: block;
-		position: relative;		
+		display: block !important;
+		position: relative !important;		
 	}
 
 	li.message:hover .delete-message {
-		display: block;
-		right: 0;
-		min-width: 16px;
+		display: block !important;
+		right: 0 !important;
+		min-width: 16px !important;
 	}
 
 	li.message:hover .star {
-		bottom: 14px;
-		left: 200px;
+		bottom: 14px !important;
+		left: 200px !important;
 	}
 
 	li.message:hover .reply {
-		bottom: 28px;
-		left: 217px;
+		bottom: 28px !important;
+		left: 217px !important;
 	}
 
 	li.message:hover div.meta {
-		max-height: 17px;
+		max-height: 17px !important;
 	}
 	/**** end hack ****/
 
@@ -204,83 +208,83 @@
 	#topic-detail.group #main-menu {
 		display: block !important;
 		float: left !important;
-		position: fixed;
-		right: 5px;
-		left: auto;
-		top: 7px;
+		position: fixed !important;
+		right: 5px !important;
+		left: auto !important;
+		top: 7px !important;
 	}
 
 	#topic-detail.group #main-menu li:nth-child(2n), 
 	#topic-detail.group #main-menu li:last-child {
-		display: none;
+		display: none !important;
 	}
 
 	#topic-detail.group #main-menu li ul li:nth-child(2n),
 	#topic-detail.group #main-menu li ul li:last-child {
-		display: auto;
+		display: auto !important;
 	}
 
 	#topic-detail.group .topic-title h2 {
 		max-width: 80% !important;
-		text-overflow: ellipsis-word;
+		text-overflow: ellipsis-word !important;
 	}
 
 	#topic-detail.group #main-menu li:first-child {
-		top: 21px;
+		top: 21px !important;
 	}
 
 	#topic-detail.group #main-menu li ul li:first-child, #topic-detail.group #main-menu li ul li:nth-child(3n) {
-		top: auto;
+		top: auto !important;
 	}
 
 	#topic-detail.group #main-menu li:nth-child(3n) {
-		top: -17px;
+		top: -17px !important;
 	}
 
 	#topic-detail.group #main-menu li a.dropdown {
-		margin-bottom: 0;
-		display: block;
+		margin-bottom: 0 !important;
+		display: block !important;
 	}
 
 	#topic-detail.group #topic-detail-topic.topic-title {
-		pointer-events: none;
+		pointer-events: none !important;
 	}
 
 	#main-menu li .dropdown-list {
-		left: auto;
-		right: 0;
+		left: auto !important;
+		right: 0 !important;
 		width: 200px !important;
-		-webkit-border-radius: 5px 0 5px 5px;
+		-webkit-border-radius: 5px 0 5px 5px !important;
 	}
 	/**** end groups and mentions menus ****/
 
 	/**** users online ****/
 	#topic-detail.group #header {
-		height: 45px;
+		height: 45px !important;
 	}
 
 	#topic-detail.group #top-content, 
 	#topic-detail.group #sidebar .box:first-child .title {
-		display: none;
+		display: none !important;
 	}
 
 	#topic-detail.group #sidebar {
-		margin-top: -5px;
+		margin-top: -5px !important;
 		min-width: 100% !important;
 	}
 
 	#topic-detail.group #sidebar .box:first-child .pad {
 		display: block !important;
-		position: relative;
-		z-index: 1;
-		background: rgba(50,50,50,.35);
-		padding: 0 0 3px;
+		position: relative !important;
+		z-index: 1 !important;
+		background: rgba(50,50,50,.35) !important;
+		padding: 0 0 3px !important;
 	}
 
 	#topic-detail.group #sidebar .box:first-child .pad ul.userpics {
-		padding: 6px 12px 3px;
-		background: #fcfcfc;
-		border-bottom: 1px solid #999;
+		padding: 6px 12px 3px !important;
+		background: #fcfcfc !important;
+		border-bottom: 1px solid #999 !important;
 		float: left !important;
 		min-width: 100% !important;
 	}
