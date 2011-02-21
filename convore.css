@@ -1,3 +1,4 @@
+
 /* Convore Min-Width Userstyle                     */
 /*                                                 */
 /* author: Adam Brault | http://andyet.net         */
@@ -54,13 +55,27 @@
 	  display: none !important;
 	}
 
-	#mentions .topic-title, #topic-detail.group .topic-title {
+	#topic-detail.group .topic-title {
 	  position: absolute !important;
 	  top: 0 !important;
 	  z-index: 1000 !important;
 	}
 
-	#mentions .topic-title h2, #topic-detail.group .topic-title h2 {
+	#mentions #main .header-title {
+		z-index: 1000 !important;
+		background: none !important;
+		border: 0 !important;
+	}
+
+	#mentions #main .header-title h2 {
+		position: fixed !important;
+		top: 13px !important;
+		color: #fff !important;
+		left: 50px !important;
+		text-shadow: #000 0 0 5px !important;
+	}
+
+	#topic-detail.group .topic-title h2 {
 	  width: auto !important;
 	}
 
@@ -143,11 +158,21 @@
 	}
 
 	#mentions .pad,
-	#mentions .global-unread-count,
 	#topic-detail.group .pad,
-	#global-search,
-	#topic-detail.group .global-unread-count {
+	#global-search {
 	  display: none !important;
+	}
+
+	.global-unread-count {
+		top: 4px !important;
+		right: 78px !important;
+	}
+
+	#mention-count {
+		top: 0 !important;
+		right: 78px !important;
+		left: auto !important;
+		padding: 0 3px 1px !important;
 	}
 
 	#mentions #header .header-content, #topic-detail.group #header .header-content {
@@ -203,6 +228,15 @@
 		left: 200px !important;
 	}
 
+	#mentions li.message:hover .star {
+		bottom: 0 !important;
+		right: 0 !important;
+		left: auto !important;
+		float: right !important;
+		min-width: 16px !important;
+		min-height: 16px !important;
+	}
+
 	li.message:hover .reply {
 		bottom: 28px !important;
 		left: 217px !important;
@@ -245,7 +279,7 @@
 
 	#mentions #main-menu li:first-child, 
 	#topic-detail.group #main-menu li:first-child {
-		top: 21px !important;
+		top: 22px !important;
 	}
 
 	#mentions #main-menu li ul li:first-child,
@@ -280,23 +314,20 @@
 	/**** end groups and mentions menus ****/
 
 	/**** users online ****/
-	#mentions #header, #topic-detail.group #header {
+	#topic-detail.group #header {
 		height: 45px !important;
 	}
 
-	#mentions #top-content,
-	#mentions #sidebar .box:first-child .title,
 	#topic-detail.group #top-content, 
 	#topic-detail.group #sidebar .box:first-child .title {
 		display: none !important;
 	}
 
-	#mentions #sidebar, #topic-detail.group #sidebar {
+	#topic-detail.group #sidebar {
 		margin-top: -5px !important;
 		min-width: 100% !important;
 	}
 
-	#mentions #sidebar .box:first-child .pad, 
 	#topic-detail.group #sidebar .box:first-child .pad {
 		display: block !important;
 		position: relative !important;
@@ -305,7 +336,6 @@
 		padding: 0 0 3px !important;
 	}
 
-	#mentions #sidebar .box:first-child .pad ul.userpics,
 	#topic-detail.group #sidebar .box:first-child .pad ul.userpics {
 		padding: 6px 12px 3px !important;
 		background: #fcfcfc !important;
@@ -314,12 +344,11 @@
 		min-width: 100% !important;
 	}
 
-	#mentions #sidebar .box:first-child .pad ul.userpics li, 
 	#topic-detail.group #sidebar .box:first-child .pad ul.userpics li {
 		float: left !important;
 	}
 	/**** end users online ****/
-	
+
 	/**** mentions specific ****/
 	#message-list a.message-link {
 		float: right !important;
@@ -327,4 +356,5 @@
 		margin-left: 4px !important;
 	}
 	/**** end mentions specific ****/
+
 }
