@@ -262,7 +262,7 @@
 	li.message .star, 
 	li.message:hover .star {
 		bottom: 14px !important;
-		left: 160px !important;
+		left: 170px !important;
 	}
 
 	#mentions li.message:hover .star {
@@ -280,7 +280,7 @@
 
 	li.message:hover .reply {
 		bottom: 28px !important;
-		left: 178px !important;
+		left: 188px !important;
 	}
 
 	li.message div.meta {
