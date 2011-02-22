@@ -1,4 +1,5 @@
 
+
 /* Convore Min-Width Userstyle                     */
 /*                                                 */
 /* author: Adam Brault | http://andyet.net         */
@@ -203,16 +204,51 @@
 		line-height: 1.5em !important;
 	}
 
-	a.star-message.starred, .message:hover a.star-message, .message:hover a.reply-message {
+	li.message:hover a.star-message.starred, 
+	li.message:hover a.star-message, 
+	li.message:hover a.reply-message {
 		display: block !important;
 	}
 
-	li.message:hover .star a, li.message:hover .reply a, li.message .star a.starred {
+	li.message .star a, 
+	li.message:hover .star a, 
+	li.message:hover .reply a, 
+	li.message:hover .star a.starred {
 		width: 16px !important;
 		max-width: 16px !important;
 	}
+	
+	li.message a.starred {
+		position: relative !important;
+		float: left !important;
+		display: inline-block !important;
+		min-width: 16px !important;
+	}
 
-	li.message:hover .star, li.message:hover .reply {
+	li.message:hover a.self-starred {
+		background-position: top left !important;
+	}
+
+	li.message:hover a.self-starred:hover {
+		background-position: bottom left !important;
+	}
+
+	li.message .star .users-starred {
+		width: 65px !important;
+		max-width: 65px !important;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		display: block !important;
+		float: left !important;
+		bottom: 15px !important;
+		left: 18px !important;
+		position: relative !important;
+	}
+
+	li.message .star,
+	li.message:hover .star, 
+	li.message:hover .reply {
 		display: block !important;
 		position: relative !important;		
 	}
@@ -223,9 +259,10 @@
 		min-width: 16px !important;
 	}
 
+	li.message .star, 
 	li.message:hover .star {
 		bottom: 14px !important;
-		left: 200px !important;
+		left: 160px !important;
 	}
 
 	#mentions li.message:hover .star {
@@ -237,12 +274,16 @@
 		min-height: 16px !important;
 	}
 
-	li.message:hover .reply {
-		bottom: 28px !important;
-		left: 217px !important;
+	li.message:hover .users-starred {
+		display: none !important;
 	}
 
-	li.message:hover div.meta {
+	li.message:hover .reply {
+		bottom: 28px !important;
+		left: 178px !important;
+	}
+
+	li.message div.meta {
 		max-height: 17px !important;
 	}
 	/**** end display icons ****/
@@ -278,7 +319,9 @@
 	#mentions .topic-title h2, 
 	#topic-detail.group .topic-title h2 {
 		max-width: 80% !important;
-		text-overflow: ellipsis-word !important;
+		text-overflow: ellipsis !important;
+		white-space: nowrap !important;
+		overflow: hidden !important;
 	}
 
 	#mentions #main-menu li:nth-child(2n), 
@@ -291,8 +334,8 @@
 		top: -17px !important;
 	}
 
-	#mentions #main-menu li ul li, 
-	#topic-detail.group #main-menu li ul li {
+	#mentions #main-menu li ul li:nth-child(n), 
+	#topic-detail.group #main-menu li ul li:nth-child(n) {
 		top: auto !important;
 	}
 
