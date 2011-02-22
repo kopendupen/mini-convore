@@ -265,13 +265,20 @@
 		left: 170px !important;
 	}
 
+#mentions li.message .star {
+display: inline-block !important;
+margin-left: -3px !important;
+}
+
 	#mentions li.message:hover .star {
+		display: none !important;
+		/* see issue #5 comments for explanation. ***
 		bottom: 0 !important;
 		right: 0 !important;
 		left: auto !important;
 		float: right !important;
 		min-width: 16px !important;
-		min-height: 16px !important;
+		min-height: 16px !important; */
 	}
 
 	li.message:hover .users-starred {
