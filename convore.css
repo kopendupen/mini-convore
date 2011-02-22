@@ -257,18 +257,22 @@
 		top: 7px !important;
 	}
 
-	#mentions #main-menu li:nth-child(2n),
-	#mentions #main-menu li:last-child, 
-	#topic-detail.group #main-menu li:nth-child(2n), 
+	#mentions #main-menu li:first-child,
+	#mentions #main-menu li:nth-child(3n),
+	#mentions #main-menu li:last-child,
+	#topic-detail.group #main-menu li:first-child,
+	#topic-detail.group #main-menu li:nth-child(3n), 
 	#topic-detail.group #main-menu li:last-child {
 		display: none !important;
 	}
 
-	#mentions #main-menu li ul li:nth-child(2n),
+	#mentions #main-menu li ul li:first-child,
+	#mentions #main-menu li ul li:nth-child(3n),
 	#mentions #main-menu li ul li:last-child,
-	#topic-detail.group #main-menu li ul li:nth-child(2n),
+	#topic-detail.group #main-menu li ul li:first-child,
+	#topic-detail.group #main-menu li ul li:nth-child(3n),
 	#topic-detail.group #main-menu li ul li:last-child {
-		display: auto !important;
+		display: list-item !important;
 	}
 
 	#mentions .topic-title h2, 
@@ -277,21 +281,19 @@
 		text-overflow: ellipsis-word !important;
 	}
 
-	#mentions #main-menu li:first-child, 
-	#topic-detail.group #main-menu li:first-child {
+	#mentions #main-menu li:nth-child(2n), 
+	#topic-detail.group #main-menu li:nth-child(2n) {
 		top: 22px !important;
 	}
 
-	#mentions #main-menu li ul li:first-child,
-	#mentions #main-menu li ul li:nth-child(3n), 
-	#topic-detail.group #main-menu li ul li:first-child, 
-	#topic-detail.group #main-menu li ul li:nth-child(3n) {
-		top: auto !important;
+	#mentions #main-menu li:nth-child(4n), 
+	#topic-detail.group #main-menu li:nth-child(4n) {
+		top: -17px !important;
 	}
 
-	#mentions #main-menu li:nth-child(3n), 
-	#topic-detail.group #main-menu li:nth-child(3n) {
-		top: -17px !important;
+	#mentions #main-menu li ul li, 
+	#topic-detail.group #main-menu li ul li {
+		top: auto !important;
 	}
 
 	#mentions #main-menu li a.dropdown, 
