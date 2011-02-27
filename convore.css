@@ -12,36 +12,37 @@
 
 @media screen and (max-width: 450px) {
 
-	#mentions *, #topic-detail.group * {
+	body * {
 	  float: none !important;
 	  width: auto !important;
 	}
 
-	#mentions, #topic-detail.group {
+	body {
 	  min-width: 300px !important;
 	}
 
-	#mentions #stripe, #topic-detail.group #stripe {
+	#stripe {
 	  z-index: 9999 !important;
 	  top: 0 !important;
 	  position: z-index !important;
 	  width: 100% !important;
 	}
 
-	#mentions #header #logo a, #topic-detail.group #header #logo a {
+	#header #logo a {
 	  width: 24px !important;
 	  left: 15px !important;
 	}
 
-	#mentions #message-list, #topic-detail.group #message-list {
+	#message-list, 
+	#group-list .gen-list {
 	  padding: 0px !important;
 	}
 
-	#mentions #main, #topic-detail.group #main {
+	#main {
 	  width: 100% !important;
 	}
 
-	#mentions #footer, #topic-detail.group #footer {
+	#footer {
 	  width: 100% !important;
 	  min-height: 50px !important;
 	}
@@ -62,13 +63,13 @@
 	  z-index: 1000 !important;
 	}
 
-	#mentions #main .header-title {
+	#main .header-title {
 		z-index: 1000 !important;
 		background: none !important;
 		border: 0 !important;
 	}
 
-	#mentions #main .header-title h2 {
+	#main .header-title h2 {
 		position: fixed !important;
 		top: 13px !important;
 		color: #fff !important;
@@ -80,15 +81,17 @@
 	  width: auto !important;
 	}
 
-	#mentions .header-content, #topic-detail.group .header-content {
+	.header-content {
 	  width: 100% !mportant;
 	}
 
-	#mentions .message .user img, #topic-detail.group .message .user img {
+	#mentions .message .user img, 
+	#topic-detail.group .message .user img {
 	  position: absolute !important;
 	}
 
-	#mentions .embedded-images li img, #topic-detail.group .embedded-images li img {
+	#mentions .embedded-images li img, 
+	#topic-detail.group .embedded-images li img {
 	  margin: 10px 30px !important;
 	}
 
@@ -99,12 +102,13 @@
 	  border-top: 0px !important;
 	}
 
-	#mentions #header, #topic-detail.group #header {
+	#header {
 	  top: 4px !important;
 	  z-index: 100 !important;
 	}
 
-	#mentions .topic-title, #topic-detail.group .topic-title {
+	#mentions .topic-title, 
+	#topic-detail.group .topic-title {
 	  padding: 0 !important;
 	  margin: 0 !important;
 	  left: 40px !important;
@@ -117,7 +121,8 @@
 	  height: auto !important;
 	}
 
-	#mentions .topic-title h2, #topic-detail.group .topic-title h2 {
+	#mentions .topic-title h2, 
+	#topic-detail.group .topic-title h2 {
 	  text-shadow: #000 0 0 5px;
 	  color: white !important;
 	  font-size: 16px !important;
@@ -127,41 +132,25 @@
 	  border: 0px none !important;
 	}
 
-
-	#mentions .topic-title .new-topic, #topic-detail.group .topic-title .new-topic {
-		display: none !important;
-	}
-
-	#mentions #id-message, #topic-detail.group #id-message {
+	#mentions #id-message, 
+	#topic-detail.group #id-message {
 	  width: 95% !important
 	}
 
-	#mentions #post-message span, #topic-detail.group #post-message span {
+	#mentions #post-message span, 
+	#topic-detail.group #post-message span {
 	  position: absolute !important;
 	  display: none !important;
 	}
 
-	#mentions .btn, #topic-detail.group .btn {
-	  display: none !important;
-	}
-
-	#mentions #topic-detail-topic.topic-title, #topic-detail.group #topic-detail-topic.topic-title {
+	#mentions #topic-detail-topic.topic-title, 
+	#topic-detail.group #topic-detail-topic.topic-title {
 	  position: fixed !important;
 	  background: transparent !important;
 	  height: 30px !important;
 	  z-index: 200 !important;
 	  padding: 6px 9px 6px !important;
 	  width: 100% !important;
-	}
-
-	#mentions #topic-detail-topic .thumb, #topic-detail.group #topic-detail-topic .thumb {
-	  display: none !important;
-	}
-
-	#mentions .pad,
-	#topic-detail.group .pad,
-	#global-search {
-	  display: none !important;
 	}
 
 	.global-unread-count {
@@ -176,25 +165,32 @@
 		padding: 0 3px 1px !important;
 	}
 
-	#mentions #header .header-content, #topic-detail.group #header .header-content {
+	#header .header-content {
 	  width: auto !important;
 	}
 
-	#mentions #main-menu, #topic-detail.group #main-menu {
-	  display: none !important;
-	}
-
-	#mentions .settings-login-menu, #topic-detail.group .settings-login-menu {
-	  display: none !important;
-	}
-
-	#mentions .gray-btns, #topic-detail.group .gray-btns {
-	  display: none !important;
-	}
-
-	#mentions .message .user, #topic-detail.group .message .user {
+	#mentions .message .user, 
+	#topic-detail.group .message .user {
 	  float: left !important;
 	  margin: 1px 5px 0 0 !important;
+	}
+
+	#mentions .topic-title .new-topic, 
+	#topic-detail.group .topic-title .new-topic, 
+	#mentions .btn, 
+	#topic-detail.group .btn,
+	#mentions #topic-detail-topic .thumb, 
+	#topic-detail.group #topic-detail-topic .thumb, 
+	#mentions .pad,
+	#topic-detail.group .pad,
+	#global-search, 
+	#mentions .settings-login-menu, 
+	#topic-detail.group .settings-login-menu,
+	#mentions .gray-btns, 
+	#topic-detail.group .gray-btns, 
+	#group-list #sidebar, 
+	#group-list div.cl {
+	  display: none !important;
 	}
 
 	
@@ -265,20 +261,19 @@
 		left: 170px !important;
 	}
 
-#mentions li.message .star {
-display: inline-block !important;
-margin-left: -3px !important;
-}
+	#mentions li.message .star {
+		display: inline-block !important;
+		margin-left: -3px !important;
+	}
 
 	#mentions li.message:hover .star {
 		display: none !important;
-		/* see issue #5 comments for explanation. ***
-		bottom: 0 !important;
+		/*bottom: 0 !important;
 		right: 0 !important;
 		left: auto !important;
 		float: right !important;
 		min-width: 16px !important;
-		min-height: 16px !important; */
+		min-height: 16px !important;*/
 	}
 
 	li.message:hover .users-starred {
@@ -296,7 +291,7 @@ margin-left: -3px !important;
 	/**** end display icons ****/
 
 	/**** displaying groups and mention menu ****/
-	#mentions #main-menu, #topic-detail.group #main-menu {
+	#main-menu {
 		display: block !important;
 		float: left !important;
 		position: fixed !important;
@@ -305,55 +300,44 @@ margin-left: -3px !important;
 		top: 7px !important;
 	}
 
-	#mentions #main-menu li:first-child,
-	#mentions #main-menu li:nth-child(3n),
-	#mentions #main-menu li:last-child,
-	#topic-detail.group #main-menu li:first-child,
-	#topic-detail.group #main-menu li:nth-child(3n), 
-	#topic-detail.group #main-menu li:last-child {
+	#main-menu li:first-child,
+	#main-menu li:nth-child(3n),
+	#main-menu li:last-child {
 		display: none !important;
 	}
 
-	#mentions #main-menu li ul li:first-child,
-	#mentions #main-menu li ul li:nth-child(3n),
-	#mentions #main-menu li ul li:last-child,
-	#topic-detail.group #main-menu li ul li:first-child,
-	#topic-detail.group #main-menu li ul li:nth-child(3n),
-	#topic-detail.group #main-menu li ul li:last-child {
+	#main-menu li ul li:first-child,
+	#main-menu li ul li:nth-child(3n),
+	#main-menu li ul li:last-child {
 		display: list-item !important;
 	}
 
-	#mentions .topic-title h2, 
-	#topic-detail.group .topic-title h2 {
+	.topic-title h2,
+	.header-title h2 {
 		max-width: 80% !important;
 		text-overflow: ellipsis !important;
 		white-space: nowrap !important;
 		overflow: hidden !important;
 	}
 
-	#mentions #main-menu li:nth-child(2n), 
-	#topic-detail.group #main-menu li:nth-child(2n) {
+	#main-menu li:nth-child(2n) {
 		top: 22px !important;
 	}
 
-	#mentions #main-menu li:nth-child(4n), 
-	#topic-detail.group #main-menu li:nth-child(4n) {
+	#main-menu li:nth-child(4n) {
 		top: -17px !important;
 	}
 
-	#mentions #main-menu li ul li:nth-child(n), 
-	#topic-detail.group #main-menu li ul li:nth-child(n) {
+	#main-menu li ul li:nth-child(n) {
 		top: auto !important;
 	}
 
-	#mentions #main-menu li a.dropdown, 
-	#topic-detail.group #main-menu li a.dropdown {
+	#main-menu li a.dropdown {
 		margin-bottom: 0 !important;
 		display: block !important;
 	}
 
-	#mentions #topic-detail-topic.topic-title, 
-	#topic-detail.group #topic-detail-topic.topic-title {
+	#topic-detail-topic.topic-title {
 		pointer-events: none !important;
 	}
 
@@ -408,5 +392,70 @@ margin-left: -3px !important;
 		margin-left: 4px !important;
 	}
 	/**** end mentions specific ****/
+
+
+	/**** 'your groups' page ****/
+	#group-list #wrap {
+		position: relative !important;
+		top: 40px !important;
+	}
+
+	#group-list #main {
+		min-height: 100px !important;
+	}
+	
+	#group-list .header-title .new-topic {
+		top: -31px !important;
+		right: auto !important;
+		left: 12px !important;
+		color: rgba(75,75,75,0.85) !important;
+		text-shadow: 0 1px 0 #d8d8d8 !important;
+		border-left: 1px solid rgba(75,75,75,0.1) !important;
+		border-right: 1px solid rgba(75,75,75,0.1) !important;
+		}
+
+	#group-list .header-title .new-topic:hover, 
+	#group-list .topic-title h3 a:hover {
+		color: #008abd !important;
+	} 
+
+	#group-list .group-info div {
+		float: left !important;
+	}
+
+	#group-list .thumb {
+		float: left !important;
+	}
+
+	#group-list li.topic-title .meta {
+		display: block !important;
+		padding-top: 10px !important;
+		padding-bottom: 7px !important;
+		clear: both !important;
+	}
+
+	#group-list .mark-item .gray-btns {
+		-webkit-box-shadow: none !important;
+		padding: 2px 7px 1px !important;
+		margin-left: 4px !important;
+	}
+
+	#group-list #footer {
+		padding: 0 10px !important;
+	}
+
+	#group-list #footer .left {
+		margin-bottom: 5px !important;
+	}
+
+	#group-list #footer .left ul li {
+		float: left !important;
+		padding-bottom: 20px !important;
+	}
+
+	#group-list #footer .right {
+		text-align: left !important;
+		margin-top: 0 !important;
+	}
 
 }
