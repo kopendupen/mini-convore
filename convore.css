@@ -189,11 +189,12 @@
 	#mentions .gray-btns, 
 	#topic-detail.group .gray-btns, 
 	#group-list #sidebar, 
-	#group-list div.cl {
+	div.cl {
 	  display: none !important;
 	}
 
 	
+
 	/**** display star, reply, delete icons on message hover ****/
 	.message .message-entry {
 		padding-right: 6px !important;
@@ -230,7 +231,7 @@
 	}
 
 	li.message .star .users-starred {
-		width: 180px !important;
+		/* width: 180px !important; */
 		max-width: 180px !important;
 		text-overflow: ellipsis;
 		white-space: nowrap;
@@ -289,6 +290,7 @@
 		max-height: 17px !important;
 	}
 	/**** end display icons ****/
+
 
 	/**** displaying groups and mention menu ****/
 	#main-menu {
@@ -349,6 +351,7 @@
 	}
 	/**** end groups and mentions menus ****/
 
+
 	/**** users online ****/
 	#topic-detail.group #header {
 		height: 45px !important;
@@ -384,6 +387,7 @@
 		float: left !important;
 	}
 	/**** end users online ****/
+
 
 	/**** mentions specific ****/
 	#message-list a.message-link {
@@ -439,23 +443,140 @@
 		padding: 2px 7px 1px !important;
 		margin-left: 4px !important;
 	}
+	/**** end 'your groups' page stuff ***/
 
-	#group-list #footer {
-		padding: 0 10px !important;
+
+	/**** group home page ****/
+	#group-detail.group #sidebar {
+		display: none !important;
 	}
 
-	#group-list #footer .left {
+	#group-detail.group #top-content {
+		position: relative !important;
+	}
+
+	#group-detail.group #top-content .box {
+		margin-bottom: 0 !important;
+	}
+
+	#group-detail.group #main {
+		padding-top: 40px !important;
+		margin-top: 0 !important;
+		min-height: 100px !important;
+	}
+
+	#group-detail.group #main .header-title {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
+	#group-detail.group .topic-title {
+		padding-bottom: 10px !important;
+	}
+
+	#group-detail.group .topic-title h3 {
+		margin-top: 6px !important;
+	}
+
+	#group-detail.group .topic-info div {
+		float: left !important;
+	}
+
+	#group-detail.group .header-title .new-topic {
+		top: -32px !important;
+		right: auto !important;
+		left: 12px !important;
+		position: absolute !important;
+		z-index: 9999 !important;
+		display: block !important;
+	}
+
+	#group-detail.group .header-title .new-topic:hover, 
+	#group-detail.group .topic-title h3 a:hover {
+		color: #008abd !important;
+	} 
+
+	#group-detail.group .pad h2 a {
+		display: block !important;
+		float: left !important;
+		margin-right: 10px !important;
+	}
+
+	#group-detail.group .pad h2 span {
+		display: block !important;
+		line-height: 10px !important;
+		height: 21px !important;
+		max-height: 21px !important;
+		text-overflow: ellipsis !important;
+	}
+
+	#group-detail.group .pad h2 span.private {
+		float: left !important;
+		min-width: 16px !important;
+	}
+
+	#group-detail.group .pad a.gray-btns {
+		position: absolute !important;
+		top: 47px !important;
+	}
+
+	#group-detail.group .pad a.is-hovering {
+		color: #eee !important;
+		text-shadow: 0 1px 0 #333 !important;
+	}
+
+	#group-detail.group .mark-item .gray-btns {
+		-webkit-box-shadow: none !important;
+		padding: 2px 7px 1px !important;
+		margin-left: 4px !important;
+	}
+
+	#group-detail.group .mark-item input[value="Mark read"].gray-btns {
+		position: absolute !important;
+		top: 19px !important;
+		right: 130px !important;
+	}
+
+	#group-detail.group #group-actions {
+		padding-top: 30px !important;
+		top: 44px !important;
+	}
+
+	#group-detail.group #group-actions a, 
+	#group-detail.group #group-actions form input {
+		text-align: right !important;
+	}
+/**** end group home page ****/
+
+
+
+/**** experimental universal stuff ****/
+	.gray-btns {
+		color: rgba(75,75,75,0.85) !important;
+		text-shadow: 0 1px 0 #d8d8d8 !important;
+		border-left: 1px solid rgba(75,75,75,0.1) !important;
+		border-right: 1px solid rgba(75,75,75,0.1) !important;
+	}
+
+	.gray-btns:hover, .is-hovering:hover {
+		color: #008abd !important;
+	}
+
+	#footer .left {
 		margin-bottom: 5px !important;
+		margin-left: 10px !important;
 	}
 
-	#group-list #footer .left ul li {
+	#footer .left ul li {
 		float: left !important;
 		padding-bottom: 20px !important;
 	}
 
-	#group-list #footer .right {
+	#footer .right {
 		text-align: left !important;
 		margin-top: 0 !important;
+		margin-left: 10px !important;
 	}
+/**** end experimental universal stuff ****/
 
 }
