@@ -139,18 +139,18 @@
 
 	#mentions #post-message span, 
 	#topic-detail.group #post-message span {
-		position: absolute !important;
-		display: none !important;
+	  position: absolute !important;
+	  display: none !important;
 	}
 
 	#mentions #topic-detail-topic.topic-title, 
 	#topic-detail.group #topic-detail-topic.topic-title {
-		position: fixed !important;
-		background: transparent !important;
-		height: 30px !important;
-		z-index: 200 !important;
-		padding: 6px 9px 6px !important;
-		width: 100% !important;
+	  position: fixed !important;
+	  background: transparent !important;
+	  height: 30px !important;
+	  z-index: 200 !important;
+	  padding: 6px 9px 6px !important;
+	  width: 100% !important;
 	}
 
 	.global-unread-count {
@@ -188,14 +188,13 @@
 	#topic-detail.group .settings-login-menu,
 	#mentions .gray-btns, 
 	#topic-detail.group .gray-btns, 
-	#group-list #sidebar, 
-	div.cl {
+	#group-list #sidebar {
 	  display: none !important;
 	}
 
-	#message-list li {
-		clear: left !important;
-	}
+#message-list li {
+clear: left !important;
+}
 
 	
 
@@ -224,12 +223,12 @@
 		float: left !important;
 		display: block !important;
 		min-width: 16px !important;
-		bottom: -16px !important;
+bottom: -16px !important;
 	}
 
-	li.message:hover a.starred {
-		bottom: 0 !important;
-	}
+li.message:hover a.starred {
+bottom: 0 !important;
+}
 
 	li.message:hover a.self-starred {
 		background-position: top left !important;
@@ -325,7 +324,7 @@
 
 	.topic-title h2,
 	.header-title h2 {
-		max-width: 80% !important;
+		max-width: 54% !important;
 		text-overflow: ellipsis !important;
 		white-space: nowrap !important;
 		overflow: hidden !important;
@@ -358,6 +357,10 @@
 		width: 200px !important;
 		-webkit-border-radius: 5px 0 5px 5px !important;
 	}
+
+#main-menu li .dropdown-list li a {
+padding-right: 25px !important;
+}
 	/**** end groups and mentions menus ****/
 
 
@@ -371,9 +374,14 @@
 		display: none !important;
 	}
 
+#topic-detail.group #main {
+margin-top: 0 !important;
+}
+
 	#topic-detail.group #sidebar {
 		margin-top: -5px !important;
 		min-width: 100% !important;
+position: relative !important;
 	}
 
 	#topic-detail.group #sidebar .box:first-child .pad {
@@ -389,12 +397,16 @@
 		background: #fcfcfc !important;
 		border-bottom: 1px solid #999 !important;
 		float: left !important;
-		min-width: 100% !important;
+min-width: 94% !important;
 	}
 
 	#topic-detail.group #sidebar .box:first-child .pad ul.userpics li {
 		float: left !important;
 	}
+
+#topic-detail.group #sidebar .box:nth-child(2) {
+display: none !important;
+}
 	/**** end users online ****/
 
 
@@ -513,9 +525,7 @@
 
 	#group-detail.group .pad h2 span {
 		display: block !important;
-		line-height: 10px !important;
-		height: 21px !important;
-		max-height: 21px !important;
+		line-height: 22px !important;
 		text-overflow: ellipsis !important;
 		white-space: nowrap !important;
 		overflow: hidden !important;
@@ -557,11 +567,24 @@
 	#group-detail.group #group-actions form input {
 		text-align: right !important;
 	}
-/**** end group home page ****/
+	/**** end group home page ****/
 
 
+	/**** create new topic ****/
+	#facebox .header-title h2 {
+		width: 100% !important;
+		max-width: 100% !important;
+		text-overflow: none !important;
+		overflow: auto !important;
+	}
 
-/**** experimental universal stuff ****/
+	#facebox #topic-create .btn {
+		float: right !important;
+	}
+	/**** end create new topic ****/
+
+
+	/**** experimental universal stuff ****/
 	.gray-btns {
 		color: rgba(75,75,75,0.85) !important;
 		text-shadow: 0 1px 0 #d8d8d8 !important;
@@ -588,6 +611,6 @@
 		margin-top: 0 !important;
 		margin-left: 10px !important;
 	}
-/**** end experimental universal stuff ****/
+	/**** end experimental universal stuff ****/
 
 }
