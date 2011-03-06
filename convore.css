@@ -229,7 +229,7 @@
 	
 	li.message a.starred {
 		position: relative !important;
-		float: left !important;
+		/*float: left !important;*/
 		display: block !important;
 		min-width: 16px !important;
 		bottom: 0 !important;
