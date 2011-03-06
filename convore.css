@@ -1,3 +1,5 @@
+
+
 /* Convore Min-Width Userstyle                     */
 /*                                                 */
 /* author: Adam Brault | http://andyet.net         */
@@ -230,10 +232,6 @@
 		float: left !important;
 		display: block !important;
 		min-width: 16px !important;
-		bottom: -16px !important;
-	}
-
-	li.message:hover a.starred {
 		bottom: 0 !important;
 	}
 
@@ -255,7 +253,7 @@
 		float: left !important;
 		bottom: -2px !important;
 		left: 18px !important;
-		position: relative !important;
+		position: absolute !important;
 	}
 
 	li.message .star,
