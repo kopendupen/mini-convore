@@ -9,6 +9,9 @@
 /* We'd love to see @etmaguire add official CSS    */
 /* of something like this to the Convore site. :D  */
 
+body {
+	overflow-y: scroll !important;
+}
 
 @media screen and (max-width: 450px) {
 
